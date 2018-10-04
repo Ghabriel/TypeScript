@@ -1070,7 +1070,8 @@ interface ReadonlyArray<T> {
       * Combines two or more arrays.
       * @param items Additional items to add to the end of array1.
       */
-    concat<U>(...items: (ConcatArray<T> | ConcatArray<U>)[]): (T | U)[];
+    concat(...items: ConcatArray<T>[]): T[];
+    // concat<U>(...items: (ConcatArray<T> | ConcatArray<U>)[]): (T | U)[];
     /**
       * Combines two or more arrays.
       * @param items Additional items to add to the end of array1.
